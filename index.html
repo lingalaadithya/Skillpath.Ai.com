@@ -1,0 +1,866 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="SkillPath AI - Learn skills, practice typing, follow roadmaps and build projects."
+    >
+
+    <title>SkillPath AI | Learning Command Center</title>
+
+    <link
+        rel="stylesheet"
+        href="/styles.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND EFFECTS
+         ===================================================== -->
+
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-orb orb-three"></div>
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="topbar">
+
+        <div class="nav-container">
+
+            <a
+                href="#home"
+                class="brand"
+            >
+                <span class="brand-mark">✦</span>
+
+                <span class="brand-text">
+                    <strong>SkillPath</strong>
+                    <small>AI</small>
+                </span>
+            </a>
+
+            <nav class="navigation">
+
+                <a href="#skills">
+                    <span>◈</span>
+                    Skills
+                </a>
+
+                <a href="#typing">
+                    <span>⌨</span>
+                    Typing
+                </a>
+
+                <a href="#roadmaps">
+                    <span>◇</span>
+                    Roadmaps
+                </a>
+
+                <a href="#projects">
+                    <span>▣</span>
+                    Projects
+                </a>
+
+                <a
+                    href="#mentor"
+                    class="nav-mentor"
+                >
+                    <span>✦</span>
+                    Mentor
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+
+        <section
+            id="home"
+            class="hero"
+        >
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    YOUR PERSONAL LEARNING COMMAND CENTER
+                </div>
+
+                <h1>
+                    Learn.
+                    <span>Build.</span>
+                    <br>
+                    Become Future-Ready.
+                </h1>
+
+                <p class="hero-description">
+                    Discover valuable skills, practice your speed,
+                    follow structured learning paths and turn ideas
+                    into real projects.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#skills"
+                        class="primary-button"
+                    >
+                        Explore Skills
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        href="#mentor"
+                        class="secondary-button"
+                    >
+                        Ask Mentor
+                        <span>✦</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+                        <strong>10+</strong>
+                        <span>Learning Paths</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>10</strong>
+                        <span>Typing Levels</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>∞</strong>
+                        <span>Practice Ideas</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Floating Learning Panel -->
+
+            <div class="hero-panel">
+
+                <div class="panel-top">
+
+                    <span class="panel-label">
+                        ✦ LEARNING STATUS
+                    </span>
+
+                    <span class="panel-live">
+                        LIVE
+                    </span>
+
+                </div>
+
+                <div class="learning-ring">
+
+                    <div class="ring-inner">
+                        <strong>∞</strong>
+                        <span>GROW</span>
+                    </div>
+
+                </div>
+
+                <div class="panel-message">
+                    <strong>Keep exploring.</strong>
+                    <span>
+                        Every small practice session
+                        builds your future skillset.
+                    </span>
+                </div>
+
+                <div class="mini-progress">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SKILLS
+             ================================================= -->
+
+        <section
+            id="skills"
+            class="section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow cyan">
+                        ◈ EXPLORE
+                    </span>
+
+                    <h2>
+                        Skills worth
+                        <span>building</span>
+                    </h2>
+
+                    <p>
+                        Explore current skills and emerging
+                        technologies to expand your toolkit.
+                    </p>
+                </div>
+
+                <div class="section-number">
+                    01
+                </div>
+
+            </div>
+
+
+            <div class="filter-bar">
+
+                <button
+                    class="filter active"
+                    data-filter="All"
+                    type="button"
+                >
+                    ✦ All Skills
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="Trending"
+                    type="button"
+                >
+                    🔥 Trending
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="Upcoming"
+                    type="button"
+                >
+                    🚀 Upcoming
+                </button>
+
+            </div>
+
+
+            <div
+                id="skills-grid"
+                class="skills-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             TYPING
+             ================================================= -->
+
+        <section
+            id="typing"
+            class="section typing-section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow gold">
+                        ⌨ SPEED LAB
+                    </span>
+
+                    <h2>
+                        Train your
+                        <span>typing</span>
+                    </h2>
+
+                    <p>
+                        Build speed, accuracy and confidence
+                        through progressive challenges.
+                    </p>
+                </div>
+
+                <div class="section-number">
+                    02
+                </div>
+
+            </div>
+
+
+            <div class="typing-layout">
+
+                <!-- Level Sidebar -->
+
+                <aside class="typing-sidebar">
+
+                    <div class="sidebar-heading">
+                        <div>
+                            <span>LEVELS</span>
+                            <strong>Typing Journey</strong>
+                        </div>
+
+                        <span class="keyboard-icon">
+                            ⌨
+                        </span>
+                    </div>
+
+                    <div
+                        id="level-list"
+                        class="level-list"
+                    ></div>
+
+                </aside>
+
+
+                <!-- Typing Workspace -->
+
+                <div class="typing-workspace">
+
+                    <div class="typing-topline">
+
+                        <div class="typing-level-title">
+                            <span>
+                                LEVEL
+                            </span>
+
+                            <strong
+                                id="typing-level-number"
+                            >
+                                1
+                            </strong>
+                        </div>
+
+                        <div
+                            id="typing-difficulty"
+                            class="difficulty-badge"
+                        >
+                            Easy
+                        </div>
+
+                    </div>
+
+
+                    <div class="typing-progress-area">
+
+                        <div class="progress-labels">
+
+                            <span>
+                                Progress
+                            </span>
+
+                            <span
+                                id="typing-progress-label"
+                            >
+                                0/10 levels completed
+                            </span>
+
+                        </div>
+
+                        <div class="progress-track">
+
+                            <div
+                                id="typing-progress"
+                                class="progress-fill"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="typing-target">
+
+                        <div class="target-label">
+                            <span>⌁</span>
+                            TYPE THIS
+                        </div>
+
+                        <p id="typing-text">
+                            Loading typing challenge...
+                        </p>
+
+                    </div>
+
+
+                    <div class="typing-input-wrapper">
+
+                        <div class="input-label">
+                            <span>⌨</span>
+                            YOUR TYPING
+                        </div>
+
+                        <textarea
+                            id="typing-input"
+                            rows="4"
+                            spellcheck="false"
+                            autocomplete="off"
+                            autocorrect="off"
+                            autocapitalize="off"
+                            placeholder="Start typing the text above..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div
+                        id="typing-message"
+                        class="typing-message"
+                    >
+                        ⌨️ Level ready. Start typing!
+                    </div>
+
+
+                    <!-- Typing Stats -->
+
+                    <div class="typing-stats">
+
+                        <div class="typing-stat">
+                            <span>⚡</span>
+                            <strong id="stat-wpm">0</strong>
+                            <small>WPM</small>
+                        </div>
+
+                        <div class="typing-stat">
+                            <span>◎</span>
+                            <strong id="stat-accuracy">100%</strong>
+                            <small>ACCURACY</small>
+                        </div>
+
+                        <div class="typing-stat">
+                            <span>×</span>
+                            <strong id="stat-errors">0</strong>
+                            <small>ERRORS</small>
+                        </div>
+
+                        <div class="typing-stat">
+                            <span>◷</span>
+                            <strong id="stat-time">00:00</strong>
+                            <small>TIME</small>
+                        </div>
+
+                        <div class="typing-stat">
+                            <span>#</span>
+                            <strong id="stat-characters">0</strong>
+                            <small>CHARS</small>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        id="next-level"
+                        type="button"
+                        class="primary-button next-level-button"
+                    >
+                        Next Level →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Advanced Practice -->
+
+            <div
+                id="advanced-practice"
+                class="advanced-practice"
+                style="display: none;"
+            >
+
+                <div class="advanced-header">
+
+                    <div>
+
+                        <span class="eyebrow violet">
+                            ✦ LEVEL 10 COMPLETE
+                        </span>
+
+                        <h3>
+                            Advanced Paragraph
+                            <span>Practice</span>
+                        </h3>
+
+                        <p>
+                            Keep training with longer passages
+                            to develop smooth, accurate typing.
+                        </p>
+
+                    </div>
+
+                    <div class="advanced-icon">
+                        ✧
+                    </div>
+
+                </div>
+
+
+                <div class="paragraph-card">
+
+                    <div class="paragraph-label">
+                        ADVANCED PASSAGE
+                    </div>
+
+                    <p id="paragraph-text">
+                        Your advanced practice paragraph
+                        will appear here.
+                    </p>
+
+                </div>
+
+
+                <textarea
+                    id="paragraph-input"
+                    class="paragraph-input"
+                    rows="7"
+                    spellcheck="false"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    placeholder="Type the paragraph above..."
+                ></textarea>
+
+
+                <div class="paragraph-stats">
+
+                    <div>
+                        <span>⚡</span>
+                        <strong id="paragraph-wpm">0</strong>
+                        <small>WPM</small>
+                    </div>
+
+                    <div>
+                        <span>◎</span>
+                        <strong id="paragraph-accuracy">100%</strong>
+                        <small>ACCURACY</small>
+                    </div>
+
+                    <div>
+                        <span>×</span>
+                        <strong id="paragraph-errors">0</strong>
+                        <small>ERRORS</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ROADMAPS
+             ================================================= -->
+
+        <section
+            id="roadmaps"
+            class="section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow violet">
+                        ◇ NAVIGATE
+                    </span>
+
+                    <h2>
+                        Your learning
+                        <span>roadmap</span>
+                    </h2>
+
+                    <p>
+                        Turn a big goal into clear, manageable
+                        steps.
+                    </p>
+                </div>
+
+                <div class="section-number">
+                    03
+                </div>
+
+            </div>
+
+
+            <div
+                id="roadmap-grid"
+                class="roadmap-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECTS
+             ================================================= -->
+
+        <section
+            id="projects"
+            class="section projects-section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow gold">
+                        ▣ BUILD
+                    </span>
+
+                    <h2>
+                        Ideas into
+                        <span>projects</span>
+                    </h2>
+
+                    <p>
+                        Practice by building something you
+                        can actually demonstrate.
+                    </p>
+                </div>
+
+                <div class="section-number">
+                    04
+                </div>
+
+            </div>
+
+
+            <div
+                id="project-grid"
+                class="project-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             MENTOR
+             ================================================= -->
+
+        <section
+            id="mentor"
+            class="section mentor-section"
+        >
+
+            <div class="mentor-shell">
+
+                <div class="mentor-intro">
+
+                    <span class="eyebrow cyan">
+                        ✦ YOUR MENTOR
+                    </span>
+
+                    <h2>
+                        Ask.
+                        <span>Understand.</span>
+                        Build.
+                    </h2>
+
+                    <p>
+                        Ask questions about skills, coding,
+                        projects, roadmaps or technology.
+                        Get explanations with practical examples.
+                    </p>
+
+
+                    <div class="mentor-features">
+
+                        <div>
+                            <span>01</span>
+                            <strong>Explain</strong>
+                            <small>
+                                Understand concepts clearly.
+                            </small>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <strong>Practice</strong>
+                            <small>
+                                Turn knowledge into exercises.
+                            </small>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <strong>Build</strong>
+                            <small>
+                                Apply ideas through projects.
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mentor-chat">
+
+                    <div class="chat-header">
+
+                        <div class="mentor-avatar-large">
+                            ✦
+                        </div>
+
+                        <div>
+                            <strong>SkillPath Mentor</strong>
+
+                            <span>
+                                ● Ready to help
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="mentor-messages"
+                        class="mentor-messages"
+                    >
+
+                        <div class="mentor-message assistant">
+
+                            <div class="mentor-avatar">
+                                ✦
+                            </div>
+
+                            <div class="mentor-bubble">
+                                <strong>
+                                    Hello, learner! 👋
+                                </strong>
+
+                                <br><br>
+
+                                Ask me about a skill,
+                                roadmap, coding problem,
+                                project idea or learning plan.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        id="mentor-form"
+                        class="mentor-form"
+                    >
+
+                        <textarea
+                            id="mentor-input"
+                            rows="2"
+                            placeholder="Ask something like: Explain Python functions with a real-world example..."
+                        ></textarea>
+
+                        <button
+                            type="submit"
+                            class="mentor-send"
+                        >
+                            <span>Ask Mentor</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </form>
+
+                    <div class="mentor-hint">
+                        Press <kbd>Enter</kbd> to send
+                        <span>•</span>
+                        <kbd>Shift</kbd> + <kbd>Enter</kbd>
+                        for a new line
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <div class="brand-mark">
+                    ✦
+                </div>
+
+                <div>
+                    <strong>SkillPath AI</strong>
+                    <span>
+                        Learn • Build • Grow
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="footer-line"></div>
+
+            <div class="footer-tagline">
+                Built for curious minds.
+            </div>
+
+        </div>
+
+
+        <div class="credits">
+
+            <span>Created by</span>
+
+            <strong>L. Adithya</strong>
+            <strong>S. Vedhasree</strong>
+            <strong>M. Mahalakshmi</strong>
+            <strong>CH. Manasa</strong>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 SkillPath AI
+            </span>
+
+            <span>
+                Keep learning. Keep building. ✦
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="/app.js"></script>
+
+</body>
+</html>
+```
